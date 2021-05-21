@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: cursive;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero{
+    background-image: url(./picture.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+
+}
+#hero1{
+    background-image: url(./picss.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+
+}
+
+#hero1::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+.flex-container {
+    display: flex;
+    background-color:black;
+  }
+  
+  .flex-container > div {
+    background-color:transparent;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+  }
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: white;
+}
+
+#hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color :white;
+    background-color:burlywood;
+    border : 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+}
+#hero .cta:hover {
+    color: white;
+    background-color: red;
+}
+
+
+#hero1 h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: white;
+}
+
+#hero1 .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color :white;
+    background-color:burlywood;
+    border : 2px solid greenyellow;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+}
+#hero1 .cta:hover {
+    color: white;
+    background-color:yellowgreen;
+}
